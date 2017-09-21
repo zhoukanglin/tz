@@ -1,60 +1,176 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
+    <head>
+        <title>Breathe</title>
+        <!--        META SECTION-->
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
-</head>
 
-<body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+
+        <!--        STYLES SECTION -->
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" /> 
+        <link rel="stylesheet" href="css/lightGreen.css" />
+        
+        
+        
+        
+
+        <!--        FONTS SECTION -->
+
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+
+
+        <!--        SCRIPT SECTION -->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.0.min.js"></script> 
+
+    </head>
+    <body>
+        <!--    Page initialization      -->
+        <div data-role="page">
+
+
+
+            <!--            Header-->
+            <header data-role="header">
+                <h1>Breathe</h1>
+                <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a class="navSelected" href="index.html" data-transition="flip">Home</a></div>
+                    <div class="ui-block-b"><a href="portfolio.html" data-transition="flip">Portfolio</a></div>
+                    <div class="ui-block-c"><a href="blog.html" data-transition="flip">Blog</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">Contact</a></div>
+                </nav>
+                <hr class="divider" />
+            </header>
+            <!--         Heder     END  -->
+
+
+
+
+            <!--            Main Content-->
+            <section data-role="content" class="wrappedWidth" id="index">
+                <div class="section-image">
+                    <img class="mainIMG" src="images/refimages/aboutme.jpg" alt="About me" />
+                    <h2>About me</h2>
+                    <div class="article-wrapper">
+                        <p>Nam vestibulum, orci sit amet pellentesque molestie, tellus augue varius erat, a euismod augue arcu eu dui. Duis sollicitudin sapien a diam bibendum viverra. Donec congue iaculis porttitor. </p>
+                        <p>Ut est odio, ornare at pretium aliquet, posuere vitae dolor. <a href="#">Duis arcu velit</a>, blandit eget suscipit dapibus, condimentum vel ligula. </p>
+                    </div>
+                </div>
+
+
+
+
+
+                <!--                Latest news section-->
+                <section id="latest-news">
+                    <div class="section-image">
+                        <a href="blog.html"><img class="mainIMG" src="images/refimages/04.jpg" alt="Latest News" /></a>
+                        <h2>Latest news</h2>
+                        <div class="article-wrapper">
+                            <article>
+                                <a href="blog-single.html"><h4>Our Latest Blog post</h4></a>
+                                <span class="date-info">January 23, 2012</span>
+                                <span class="comment-info">3 Comments</span>
+                            </article>
+                            <hr />
+                            <article>
+                                <a href="blog-single.html"><h4>Another blog post</h4></a>
+                                <span class="date-info">December 24, 2011</span>
+                                <span class="comment-info">0 Comments</span>
+                            </article>
+                            <hr />
+                            <article>
+                                <a href="blog-single.html"><h4>Short one</h4></a>
+                                <span class="date-info">September 7, 2011</span>
+                                <span class="comment-info">7 Comments</span>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section id="latest-projects">
+                    <div class="section-image">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a portfolio-featured">
+                                <a href="portfolio-single.html">
+                                    <h4>Tree of life</h4>
+                                    <img src="images/refimages/01.jpg" alt="01" />
+                                </a>
+                            </div>
+                            <div class="ui-block-b portfolio-featured">
+                                <a href="portfolio-single.html">
+                                    <h4>Fantasy bridge</h4>
+                                    <img src="images/refimages/02.jpg" alt="02" />
+                                </a>
+                            </div>
+                            <div class="ui-block-a portfolio-featured">
+                                <a href="portfolio-single.html">
+                                    <h4>Photography of grass</h4>
+                                    <img src="images/refimages/03.jpg" alt="03" />
+                                </a>
+                            </div>
+                            <div class="ui-block-b portfolio-featured">
+                                <a href="portfolio-single.html">
+                                    <h4>City at night</h4>
+                                    <img src="images/refimages/04.jpg" alt="04" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-wrapper">
+                            <a href="portfolio.html"><h3>Latest projects</h3></a>
+                            <p>Suspendisse at erat eros. Nunc vel sem sed dui faucibus placerat bibendum ut velit. Morbi porttitor congue nibh in euismod. Curabitur sed urna quis turpis interdum tempor pharetra vehicula lacus. Vestibulum quam nulla, consectetur vitae pharetra ut, congue nec quam.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!--  Main Content     END  -->
+
+
+
+
+
+
+            <!--         Footer   -->
+            <footer data-role="footer" data-theme="a" data-position="inline">
+                <hr class="divider" />
+                <h4>Follow me on</h4>
+                <div class="ui-grid-c wrappedWidth shareIcons">
+                    <div class="ui-block-a"><a href="#"><img src="images/lightGreen/fb.png" alt="Facebook" /></a></div>
+                    <div class="ui-block-b"><a href="#"><img src="images/lightGreen/digg.png" alt="Digg" /></a></div>
+                    <div class="ui-block-c"><a href="#"><img src="images/lightGreen/twitter.png" alt="Twitter" /></a></div>
+                    <div class="ui-block-d"><a href="#"><img src="images/lightGreen/rss.png" alt="RSS" /></a></div>
+                </div>
+
+                <h4>Text Widget</h4>
+                <p>Dit augue est, elementum id commodo sit amet, pellentesque vel mi.
+                    Nulla eu ante id ligula posuere pellentesque. Vivamus rhoncus mattis tellus
+                    vitae pretium. Vestibulum ullamcorper congue nisl eget suscipit. Aenean feugiat odio 
+                    a velit scelerisque consequat. Fusce congue ipsum quis felis condimentum auctor tincidunt 
+                    erat scelerisque. Vestibulum ante ipsum <a href="#">primis in faucibus</a> orci luctus et ultrices posuere 
+                    cubilia Curae; Nullam purus eros, consequat in blandit non, adipiscing ut ipsum. In eu diam 
+                    lorem. 
+                </p>
+
+                <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a class="navSelected" href="index.html" data-transition="flip">Home</a></div>
+                    <div class="ui-block-b"><a href="portfolio.html" data-transition="flip">Portfolio</a></div>
+                    <div class="ui-block-c"><a href="blog.html" data-transition="flip">Blog</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">Contact</a></div>
+            </nav>
+            </footer>   
+            <!--  Footer     END  -->  
+
         </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-</body>
-
+        <!--     Page initialization    END  -->
+    </body>
 </html>

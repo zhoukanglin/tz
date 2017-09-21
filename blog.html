@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breathe</title>
+        <!--        META SECTION-->
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+
+        <!--        STYLES SECTION -->
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" /> 
+        <link rel="stylesheet" href="css/lightGreen.css" />
+
+        <!--        FONTS SECTION -->
+
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+
+
+        <!--        SCRIPT SECTION -->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.0.min.js"></script> 
+
+    </head>
+    <body>
+        <!--    Page initialization      -->
+        <div data-role="page">
+
+
+
+            <!--            Header-->
+            <header data-role="header">
+                <h1>Breathe</h1>
+                <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a href="index.html" data-transition="flip">Home</a></div>
+                    <div class="ui-block-b"><a href="portfolio.html" data-transition="flip">Portfolio</a></div>
+                    <div class="ui-block-c"><a class="navSelected" href="blog.html" data-transition="flip">Blog</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">Contact</a></div>
+                </nav>
+                <hr class="divider" />
+            </header>
+            <!--         Heder     END  -->
+
+
+
+
+            <!--            Main Content-->
+            <section data-role="content" class="wrappedWidth" id="blog">
+                <blockquote class="info">
+                    <p>
+                        Some important info should be placed here.
+                    </p>
+                </blockquote>
+                <article>
+                    <img class="mainIMG" src="images/refimages/04_thumb.jpg" alt="Main Blog Image" />
+                    <h2>Our Latest Blog post</h2>
+                    <div class="article-wrapper">
+                        <span class="date-info">January 23, 2012</span>
+                        <span class="comment-info">3 Comments</span>
+                        <p>
+                            Proin lectus tellus, rhoncus at tincidunt eu, rutrum in est. Nam id nunc non metus aliquet rhoncus. Suspendisse sed nisi mi, in lacinia nulla. Etiam mattis est vel neque accumsan dignissim. Aliquam molestie nunc ac orci euismod varius.
+                        </p>
+                        <hr />
+                        <a href="blog-single.html">Read more »</a>
+                    </div>
+                </article>
+                <article>
+                    <img class="mainIMG" src="images/refimages/05_thumb.jpg" alt="Main Blog Image" />
+                    <h2>Another blog post</h2>
+                    <div class="article-wrapper">
+                        <span class="date-info">December 24, 2011</span>
+                        <span class="comment-info">0 Comments</span>
+                        <p>
+                            Sed id risus ac nibh vulputate ullamcorper ac sit amet orci. Nam mattis tincidunt massa, in posuere leo lacinia ac. Fusce at rutrum enim. Aenean neque ligula, pulvinar in elementum quis, consequat tincidunt odio.
+                        </p>
+                        <hr />
+                        <a href="blog-single.html">Read more »</a>
+                    </div>
+                </article>
+                <article>
+                    <img class="mainIMG" src="images/refimages/06_thumb.jpg" alt="Main Blog Image" />
+                    <h2>Short one</h2>
+                    <div class="article-wrapper">
+                        <span class="date-info">September 7, 2011</span>
+                        <span class="comment-info">7 Comments</span>
+                        <p>
+                            Integer at justo vel sem hendrerit pharetra sed eu purus. Etiam nec dui dui, eu vestibulum nulla. Integer auctor consequat suscipit. Sed et diam id diam pretium placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras consequat tempus leo at condimentum. Phasellus laoreet porta est, nec aliquet risus blandit et.
+                        </p>
+                        <hr />
+                        <a href="blog-single.html">Read more »</a>
+                    </div>
+                </article>
+                <article>
+                    <img class="mainIMG" src="images/refimages/07_thumb.jpg" alt="Main Blog Image" />
+                    <h2>Have you seen this</h2>
+                    <div class="article-wrapper">
+                        <span class="date-info">September 1, 2011</span>
+                        <span class="comment-info">5 Comments</span>
+                        <p>
+                            Nam aliquet elit at arcu volutpat eleifend. Donec auctor ligula vel felis ullamcorper at dapibus libero vulputate. Pellentesque lacinia sagittis dui, sit amet sollicitudin mi laoreet facilisis. Donec a sem mauris. Sed diam libero, laoreet in pretium non, placerat a ipsum. Donec vel facilisis diam. Ut sit amet elit at augue pretium ullamcorper. Mauris et velit augue, id pellentesque felis.
+                        </p>
+                        <hr />
+                        <a href="blog-single.html">Read more »</a>
+                    </div>
+                </article>
+                
+                
+                <div id="pagination">
+                    <a href="#">Prev</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next</a>
+                </div>
+            </section>
+            <!--  Main Content     END  -->
+
+
+
+
+
+
+            <!--         Footer   -->
+            <footer data-role="footer" data-theme="a" data-position="inline">
+                <hr class="divider" />
+                <h4>Follow me on</h4>
+                <div class="ui-grid-c wrappedWidth shareIcons">
+                    <div class="ui-block-a"><a href="#"><img src="images/lightGreen/fb.png" alt="Facebook" /></a></div>
+                    <div class="ui-block-b"><a href="#"><img src="images/lightGreen/digg.png" alt="Digg" /></a></div>
+                    <div class="ui-block-c"><a href="#"><img src="images/lightGreen/twitter.png" alt="Twitter" /></a></div>
+                    <div class="ui-block-d"><a href="#"><img src="images/lightGreen/rss.png" alt="RSS" /></a></div>
+                </div>
+
+                <h4>Text Widget</h4>
+                <p>Dit augue est, elementum id commodo sit amet, pellentesque vel mi.
+                    Nulla eu ante id ligula posuere pellentesque. Vivamus rhoncus mattis tellus
+                    vitae pretium. Vestibulum ullamcorper congue nisl eget suscipit. Aenean feugiat odio 
+                    a velit scelerisque consequat. Fusce congue ipsum quis felis condimentum auctor tincidunt 
+                    erat scelerisque. Vestibulum ante ipsum <a href="#">primis in faucibus</a> orci luctus et ultrices posuere 
+                    cubilia Curae; Nullam purus eros, consequat in blandit non, adipiscing ut ipsum. In eu diam 
+                    lorem. 
+                </p>
+
+                <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a href="index.html" data-transition="flip">Home</a></div>
+                    <div class="ui-block-b"><a href="portfolio.html" data-transition="flip">Portfolio</a></div>
+                    <div class="ui-block-c"><a class="navSelected" href="blog.html" data-transition="flip">Blog</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">Contact</a></div>
+                </nav>
+            </footer>   
+            <!--  Footer     END  -->  
+
+        </div>
+        <!--     Page initialization    END  -->
+    </body>
+</html>
